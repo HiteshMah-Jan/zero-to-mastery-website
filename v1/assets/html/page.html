@@ -2,6 +2,24 @@
 <html lang="en">
 
 <head>
+
+const SALARY_TYPE_FULL = 0;
+    const SALARY_TYPE_HOUR = 1;
+
+    public function __construct(Salary $model)
+    {
+        $this->model = $model;
+    }
+ })
+            ->addColumn('salary', function($candidate) {
+                return @format_price($candidate->user_preferences->salary);
+            })
+            ->addColumn('contract_type', function($candidate) {
+class PersonAdmin(admin.ModelAdmin):
+    search_fields = ('first_name', 'last_name')
+    list_display = ('most_recent_job',)
+    readonly_fields = ('first_name', 'last_name', 'most_recent_job', 'slug',)
+    exclude = ('vintage',)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
